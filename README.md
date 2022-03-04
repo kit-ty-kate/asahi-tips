@@ -9,16 +9,16 @@ Wifi setup:
   * systemctl enable iwd.service
   * systemctl start iwd.service
   * iwctl
-    # station wlan0 scan
-    # station wlan0 get-networks
-    # station wlan0 connect <SSID>
+    * \# station wlan0 scan
+    * \# station wlan0 get-networks
+    * \# station wlan0 connect <SSID>
 
 Resize partition:
   * pacman -S parted
   * parted
-    (parted) print free
-    (parted) resizepart 5 <end of the free space>
-    (parted) quit
+    * (parted) print free
+    * (parted) resizepart 5 <end of the free space>
+    * (parted) quit
   * resize2fs /dev/nvme0n1p5
 
 Cheatsheet:
