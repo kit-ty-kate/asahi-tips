@@ -1,10 +1,10 @@
-To install:
+## To install:
   * From macOS:
     * `curl -LO http://mrcn.st/alxsh`
     * `sh alxsh`
     * Follow all the steps and :tada:
 
-Wifi setup:
+## Wifi setup:
   * `cp -r etc/iwd/ /etc/`
   * `systemctl enable iwd.service`
   * `systemctl start iwd.service`
@@ -13,7 +13,7 @@ Wifi setup:
     * `# station wlan0 get-networks`
     * `# station wlan0 connect <SSID>`
 
-Resize partition:
+## Resize partition:
   * `pacman -S parted`
   * `parted`
     * `(parted) print free`
@@ -21,6 +21,6 @@ Resize partition:
     * `(parted) quit`
   * `resize2fs /dev/nvme0n1p5`
 
-Cheatsheet:
+## Cheatsheet:
   * sway default meta key: Cmd
   * To close sway: Cmd + Shift + e
